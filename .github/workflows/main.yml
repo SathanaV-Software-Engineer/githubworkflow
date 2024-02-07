@@ -28,19 +28,19 @@ jobs:
       # Step 1: Checkout Repository
       - name: Checkout Repository
         # Use the latest version of the checkout action to fetch the repository's code
-        uses: actions/checkout@latest
+        uses: actions/checkout@v1
 
       # Step 2: Set Up Java
       - name: Set Up Java
         # Use the latest version of the setup-java action to set up Java
-        uses: actions/setup-java@latest
+        uses: actions/setup-java@v1
         with:
           java-version: '12.x'
 
       # Step 3: Set Up Flutter
       - name: Set Up Flutter
         # Use the latest version of the flutter-action to set up Flutter
-        uses: subosito/flutter-action@latest
+        uses: subosito/flutter-action@v1
         with:
           flutter-version: '3.16.3'
 
