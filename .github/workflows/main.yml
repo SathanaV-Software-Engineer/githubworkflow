@@ -67,7 +67,7 @@ jobs:
       # Step 8: Upload Artifacts
       - name: Upload Artifacts
         # Use the latest version of the release-action to upload artifacts
-        uses: ncipollo/release-action@latest
+        uses: ncipollo/release-action@v1
         with:
           artifacts: "build/app/outputs/apk/debug/*,build/app/outputs/bundle/release/app-release.aab"
           # Tag the release with a version number and GitHub's run number
