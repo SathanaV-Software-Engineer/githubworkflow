@@ -69,7 +69,7 @@ jobs:
         # Use the latest version of the release-action to upload artifacts
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "build/app/outputs/apk/debug/*,build/app/outputs/bundle/release/app-release.aab"
+          artifacts: "build/app/outputs/flutter-apk/app-release.apk, build/app/outputs/bundle/release/app-release.aab"
           # Tag the release with a version number and GitHub's run number
           tag: v1.0.${{ github.run_number }}
           # Use the token from GitHub Secrets for authentication
